@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]" verbose="0">
+  <listeners>
+    <listener class-name="com.mycompany.app.ListenersDemo"/>
+    <listener class-name="com.mycompany.resources.ExtentReporterNG"/>
+  </listeners>
+  <test parallel="none" name="Validating homepage contents(failed)">
+    <classes>
+      <class name="com.mycompany.app.FBLogin">
+        <methods>
+          <include name="openHomePage"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.mycompany.app.FBLogin -->
+      <class name="com.mycompany.app.FBHomeValidation">
+        <methods>
+          <include name="valTitle"/>
+          <include name="closeBrowser"/>
+          <include name="openHomePage"/>
+        </methods>
+      </class> <!-- com.mycompany.app.FBHomeValidation -->
+      <class name="com.mycompany.app.FBHome">
+        <methods>
+          <include name="openHomePage"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.mycompany.app.FBHome -->
+    </classes>
+  </test> <!-- Validating homepage contents(failed) -->
+</suite> <!-- Failed suite [Suite] -->
